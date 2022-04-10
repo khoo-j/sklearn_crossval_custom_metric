@@ -1,6 +1,6 @@
 # Using a custom metric for cross validation in sklearn
 
-Being forced to use standard machine learning scores available in sklearn might be limiting. This sample code file demonstrates how to use sklearn's make_scorer to create your own metric.
+Brief: Sample code file demonstrates how to use sklearn's make_scorer to create your own metric.
 
 ### Lenghty example:
 
