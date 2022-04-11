@@ -24,7 +24,7 @@ def lift_scorer(y_true, y_pred):
     
     Returns: Lift score of 5th percentile calculated by kds.metrics
     '''
-    lift_table = kds.metrics.decile_table(y_true, y_pred, labels=False, change_deciles = 50)
+    lift_table = kds.metrics.decile_table(y_true, y_pred, labels=False, change_deciles = 20)
     return (lift_table.loc[0,'lift'])
 
 custom_cv_metric = make_scorer(lift_scorer, greater_is_better= True)
